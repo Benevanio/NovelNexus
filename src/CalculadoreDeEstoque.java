@@ -18,6 +18,8 @@ public class CalculadoreDeEstoque {
             System.out.println("Seu estoque está bom");
         } else if (valorTotalEstoque > 500) {
             System.out.println("Seu estoque está muito alto, considere vender alguns produtos");
+        }else {
+            System.out.println("Valor inválido");
         }
     }
 
