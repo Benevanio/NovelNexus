@@ -27,5 +27,6 @@ public class CalculadoreDeEstoque {
             System.out.println("O seu estoque se encontra em niveis criticos");
         }
     }
+   
 
 }
