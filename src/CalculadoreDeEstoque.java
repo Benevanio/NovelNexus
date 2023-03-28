@@ -3,14 +3,14 @@ public class CalculadoreDeEstoque {
         double LivroToradora = 80;
         double LivroReZero = 100;
        
-        while (LivroToradora > 75){
-            LivroToradora = LivroToradora - 5;
-            System.out.println("O valor do livro toradora com desconto é: " + LivroToradora);
-        }
-        while (LivroReZero > 95){
-            LivroReZero = LivroReZero - 5;
+        //usar o for para aplicar o desconto nos livros
+        for (int i = 0; i < 1; i++){
+            LivroToradora = LivroToradora - (LivroToradora * 0.1);
+            System.out.println("O valor do livro Toradora com desconto é: " + LivroToradora);
+            LivroReZero = LivroReZero - (LivroReZero * 0.1);
             System.out.println("O valor do livro ReZero com desconto é: " + LivroReZero);
         }
+        
         int quantidadeLivroToradora = 20;
         int quantidadeLivroReZero = 3;
 
