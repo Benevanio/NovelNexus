@@ -1,12 +1,20 @@
 
 public class CalculadoreDeEstoque {
     public static void main(String[] args) {
-        double LivroJava = 59.90;
-        double LivroTDD = 59.90;
-        double LivroCleanCode = 59.90;
-        double soma = LivroJava + LivroTDD + LivroCleanCode;
+        double LivroToradora =89.90;
+        double LivroReZero = 80;
 
-        System.out.println("Valor total: " + soma);
+        int quantidadeLivroToradora = 2;
+        int quantidadeLivroReZero = 3;
+
+        double valorTotalLivroToradora = LivroToradora * quantidadeLivroToradora;
+        double valorTotalLivroReZero = LivroReZero * quantidadeLivroReZero;
+
+        double valorTotalEstoque = valorTotalLivroToradora + valorTotalLivroReZero;
+
+        System.out.println("O valor total do estoque é: " + valorTotalEstoque);
+        
 
     }
+
 }
