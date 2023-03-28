@@ -1,7 +1,6 @@
-
 public class CalculadoreDeEstoque {
     public static void main(String[] args) {
-        double LivroToradora =89.90;
+        double LivroToradora = 89.90;
         double LivroReZero = 80;
 
         int quantidadeLivroToradora = 2;
@@ -13,7 +12,6 @@ public class CalculadoreDeEstoque {
         double valorTotalEstoque = valorTotalLivroToradora + valorTotalLivroReZero;
 
         System.out.println("O valor total do estoque é: " + valorTotalEstoque);
-        
 
     }
 
