@@ -12,14 +12,12 @@ public class CalculadoreDeEstoque {
         double valorTotalEstoque = valorTotalLivroToradora + valorTotalLivroReZero;
         
         System.out.println("O valor total do estoque é: " + valorTotalEstoque);
-        if (valorTotalEstoque < 200) {
-            System.out.println("Seu estoque está muito baixo");
-        } else if (valorTotalEstoque >= 200 && valorTotalEstoque <= 500) {
-            System.out.println("Seu estoque está bom");
-        } else if (valorTotalEstoque > 500) {
-            System.out.println("Seu estoque está muito alto, considere vender alguns produtos");
-        }else {
-            System.out.println("Valor inválido");
+        if (valorTotalEstoque < 150){
+            System.out.println("O valor total do estoque é menor que 150");
+        } else if (valorTotalEstoque >= 2000){
+            System.out.println("O valor total do estoque é maior que 2000");
+        } else {
+            System.out.println("O valor total do estoque está entre 150 e 2000");
         }
     }
 
