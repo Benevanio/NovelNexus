@@ -7,8 +7,10 @@ public class CalculadoreDeEstoque {
             LivroToradora = LivroToradora - 5;
             System.out.println("O valor do livro toradora com desconto é: " + LivroToradora);
         }
-        
-
+        while (LivroReZero > 95){
+            LivroReZero = LivroReZero - 5;
+            System.out.println("O valor do livro ReZero com desconto é: " + LivroReZero);
+        }
         int quantidadeLivroToradora = 20;
         int quantidadeLivroReZero = 3;
 
