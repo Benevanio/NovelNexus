@@ -1,10 +1,9 @@
 public class CalculadoreDeEstoque {
     public static void main(String[] args) {
-        double LivroToradora = 90;
+        double LivroToradora = 80;
         double LivroReZero = 100;
         double soma =0;
         int contador = 0;
-
 
 
         int quantidadeLivroToradora = 20;
