@@ -13,11 +13,11 @@ public class CalculadoreDeEstoque {
         
         System.out.println("O valor total do estoque é: " + valorTotalEstoque);
         if (valorTotalEstoque < 150){
-            System.out.println("O valor total do estoque é menor que 150");
+            System.out.println("Por favor, aumente o valor do estoque");
         } else if (valorTotalEstoque >= 2000){
-            System.out.println("O valor total do estoque é maior que 2000");
+            System.out.println("O seu estoque se encontra em niveis aceitaveis");
         } else {
-            System.out.println("O valor total do estoque está entre 150 e 2000");
+            System.out.println("O seu estoque se encontra em niveis criticos");
         }
     }
 
