@@ -6,6 +6,7 @@
  
  <img src="https://user-images.githubusercontent.com/78994881/228570711-3cfc0855-f4e6-47c3-80f4-1bab3ea6393e.gif" width="150px"> 
  
+ 
 <h1 > N$N </h1>
 
 </div>
@@ -47,4 +48,10 @@ Realização de pedidos para a tua sede.
 
 
 **Back-end:** ![JAVA](https://img.shields.io/badge/-Java-lightgrey)
+
+
+# Obrigado por ter visitado este repositorio
+
+https://user-images.githubusercontent.com/78994881/228617128-b107b232-ae5b-45e5-9784-ea7b5c656794.mp4
+
 
