@@ -2,10 +2,11 @@
 # NovelNexus
 ---
 ***
+<div align="center">
+
 ![Omake Gif Anime - New Game!! - Episode 11 - Nene Points at Naru's Bad Code](https://user-images.githubusercontent.com/78994881/228387237-3d1de50f-8a4b-4e0d-9c79-0a65de6de6ba.gif)
-___
 
-
+</div>
 
 ****
 
