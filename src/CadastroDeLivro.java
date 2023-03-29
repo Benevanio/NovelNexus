@@ -23,14 +23,14 @@ public class CadastroDeLivro {
         Manga.isbn = "978-85-66250-46-6";
         Manga.categoria = "Aventura";
         Manga.editora = "Panini";
-        Manga.valor = 33.90;
+        Manga.valor = 23.90;
         Autor autor2 = new Autor();
         autor2.nome = "Yūto Tsukuda";
         autor2.email = "YuTsu@gmail.com";
         autor2.cpf = "123.456.789-10";
         Manga.autor = autor2;
         Manga.temAutor();
-        Manga.aplicardDesconto(0.1);
+        Manga.aplicardDesconto(0.2);
         Manga.mostrarDetalhes();
 
     }
