@@ -15,9 +15,8 @@ public class CalculadoreDeEstoque {
         System.out.println("Categoria: " + livro.categoria);
         System.out.println("Autor: " + livro.autor);
         System.out.println("Editora: " + livro.editora);
-
         System.out.println("O livro " + livro.nome + " foi adicionado ao estoque");
-
+        //segundo livro
         livro = new Livro();
         livro.nome = "O Senhor dos Anéis";
         livro.descricao = "O Senhor dos Anéis é uma trilogia de livros de fantasia escrita por J. R. R. Tolkien. A trilogia é composta por O Hobbit, O Senhor dos Anéis e O Silmarillion. O Senhor dos Anéis é uma sequência direta de O Hobbit, e conta a história de Frodo Bolseiro, um hobbit que recebe de seu tio Bilbo um anel mágico, o Um Anel, que pertenceu ao poderoso Sauron, o Senhor do Escuro. Sauron deseja recuperar o anel para recuperar o seu poder e dominar a Terra-média. Frodo, com a ajuda de um grupo de amigos, deve destruir o anel antes que Sauron o recupere.";
@@ -33,7 +32,6 @@ public class CalculadoreDeEstoque {
         System.out.println("Categoria: " + livro.categoria);
         System.out.println("Autor: " + livro.autor);
         System.out.println("Editora: " + livro.editora);
-
         System.out.println("O livro " + livro.nome + " foi adicionado ao estoque");
     }
 
