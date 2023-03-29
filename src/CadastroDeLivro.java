@@ -6,8 +6,13 @@ public class CadastroDeLivro {
         livro.valor = 59.90;
         livro.isbn = "978-85-7522-480-7";
         livro.categoria = "Romance";
-        livro.autor = "Yuyuko Takemiya";
-        livro.editora = "JBC";
+        Autor autor1 = new Autor();
+        autor1.nome = "Yuyuko Takemiya";
+        autor1.email = "YuYuko1989@gmail.com";
+        autor1.cpf = "123.456.789-10";
+        livro.autor = autor1;
+        autor1.mostrarDetalhesAutor();
+
         livro.mostrarDetalhes();
 
         Livro outroLivro = new Livro();
@@ -16,8 +21,13 @@ public class CadastroDeLivro {
         outroLivro.valor = 29.90;
         outroLivro.isbn = "978-85-7522-480-7";
         outroLivro.categoria = "Aventura";
-        outroLivro.autor = "Yuu Kamiya";
         outroLivro.editora = "JBC";
+        Autor autor = new Autor();
+        autor.nome = "Yuu Kamiya";
+        autor.email = "Yuka@gmail.com";
+        autor.cpf = "123.456.789-10";
+        livro.autor = autor;
+        autor.mostrarDetalhesAutor();
         outroLivro.mostrarDetalhes();
 
         Livro maisUmLivro = new Livro();
@@ -26,10 +36,14 @@ public class CadastroDeLivro {
         maisUmLivro.valor = 29.90;
         maisUmLivro.isbn = "978-85-7522-480-7";
         maisUmLivro.categoria = "Romance";
-        maisUmLivro.autor = "Makoto Shinkai";
         maisUmLivro.editora = "JBC";
+        Autor autor2 = new Autor();
+        autor2.nome = "Makoto Shinkai";
+        autor2.email = "MakotoShinka@gmail.com";
+        autor2.cpf = "123.456.789-10";
+        livro.autor = autor2;
+        autor2.mostrarDetalhesAutor();
         maisUmLivro.mostrarDetalhes();
-
 
     }
 
