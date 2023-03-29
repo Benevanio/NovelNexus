@@ -18,4 +18,8 @@ public class Livro {
      
 
     }
+
+    public void aplicardDesconto(double porcentagem) {
+        this.valor -= this.valor * porcentagem;
+    }
 }

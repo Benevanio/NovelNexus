@@ -1,10 +1,11 @@
 public class CadastroDeLivro {
     public static void main(String[] args) {
+
         Livro livro = new Livro();
         livro.nome = "No game No life";
         livro.descricao = "Um livro sobre um jogo";
         livro.valor = 59.90;
-        livro.valor = livro.valor + (livro.valor * 0.2);s
+        livro.aplicardDesconto(0.1);
         livro.isbn = "978-85-66250-46-6";
         livro.categoria = "Aventura";
         livro.editora = "JBC";
@@ -18,7 +19,8 @@ public class CadastroDeLivro {
         Livro Manga = new Livro();
         Manga.nome = "Shoukegeki no soma";
         Manga.descricao = "Shokugeki no Soma conta a história de um garoto chamado Sōma Yukihira, cujo sonho é se tornar um chef em tempo integral no restaurante de seu pai e superar suas habilidades culinárias.";
-        Manga.valor = 23.90;
+        Manga.valor = 33.90;
+        Manga.aplicardDesconto(0.1);
         Manga.isbn = "978-85-66250-46-6";
         Manga.categoria = "Aventura";
         Manga.editora = "Panini";
