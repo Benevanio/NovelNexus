@@ -24,6 +24,7 @@ public class CadastroDeLivro {
         Manga.categoria = "Aventura";
         Manga.editora = "Panini";
         Manga.valor = 23.90;
+    
         Autor autor2 = new Autor();
         autor2.nome = "Yūto Tsukuda";
         autor2.email = "YuTsu@gmail.com";
