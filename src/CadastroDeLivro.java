@@ -19,7 +19,18 @@ public class CadastroDeLivro {
         outroLivro.autor = "Yuu Kamiya";
         outroLivro.editora = "JBC";
         outroLivro.mostrarDetalhes();
-        
+
+        Livro maisUmLivro = new Livro();
+        maisUmLivro.nome = "Kimi no Na wa";
+        maisUmLivro.descricao = "Kimi no Na wa (君の名は。, lit. Your Name.) é um filme japonês de 2016, dirigido por Makoto Shinkai e produzido pela CoMix Wave Films. É baseado no romance de mesmo nome de Shinkai, lançado em 2006. O filme foi lançado em 26 de agosto de 2016, e arrecadou mais de 30 bilhões de ienes (US$ 270 milhões) em todo o mundo, tornando-se o filme de animação mais lucrativo de todos os tempos.";
+        maisUmLivro.valor = 29.90;
+        maisUmLivro.isbn = "978-85-7522-480-7";
+        maisUmLivro.categoria = "Romance";
+        maisUmLivro.autor = "Makoto Shinkai";
+        maisUmLivro.editora = "JBC";
+        maisUmLivro.mostrarDetalhes();
+
+
     }
 
 }
