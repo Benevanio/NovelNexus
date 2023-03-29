@@ -13,8 +13,6 @@ public class RegraDeDesconto {
         autor.email = "YuuKa@gmail.com";
         autor.cpf = "123.456.789-10";
 
-
-       //aplicar o desconto no livro
         Scanner valorDesconto = new Scanner(System.in);
         System.out.println("Digite o valor do desconto: ");
 
