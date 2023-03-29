@@ -1,15 +1,18 @@
+
+import java.util.Scanner;
 public class RegraDeDesconto {
     public static void main(String[] args) {
+
+        Scanner leitor = new Scanner(System.in);
+        System.out.println("Digite o valor do livro: ");
+        double valor = leitor.nextDouble();
+        System.out.println("Digite a porcentagem de desconto: ");
+        double porcentagem = leitor.nextDouble();
         Livro livro = new Livro();
-        livro.setValor(59.90);
-
-        System.out.println("Valor atual: " + livro.getValor());
-
-        if (!livro.aplicardDesconto(0.3)) {
-            System.out.println("Desconto não pode ser maior que 30%");
-        } else {
-            System.out.println("Valor com desconto: " + livro.getValor());
-        }
+        livro.setValor(valor);
+        livro.aplicardDesconto(porcentagem);
+        System.out.println("O valor do livro com desconto é: " + livro.getValor());
+        leitor.close();
 
     }
 }
