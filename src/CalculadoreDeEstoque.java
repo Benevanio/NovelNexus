@@ -2,8 +2,6 @@ public class CalculadoreDeEstoque {
     public static void main(String[] args) {
         double LivroToradora = 80;
         double LivroReZero = 100;
-
-        // usar o for para aplicar o desconto nos livros
         for (int i = 0; i < 1; i++) {
             LivroToradora = LivroToradora - (LivroToradora * 0.1);
             System.out.println("O valor do livro Toradora com desconto é: " + LivroToradora);
