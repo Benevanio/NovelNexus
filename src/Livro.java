@@ -4,13 +4,14 @@ public class Livro {
     String isbn;
     String categoria;
     String editora;
-    double valor;
+    private double valor;
     Autor autor;
+
     void mostrarDetalhes() {
         System.out.println("\nMostrando os detalhes do livro");
         System.out.println("Nome: " + nome);
         System.out.println("Descrição: " + descricao);
-        System.out.println("Valor: " + valor);
+        System.out.println("Valor: " + getValor());
         System.out.println("ISBN: " + isbn);
         System.out.println("Categoria: " + categoria);
         System.out.println("Editora: " + editora);
@@ -21,15 +22,30 @@ public class Livro {
         System.out.println("----------");
 
     }
-    boolean temAutor() {        
+
+    public double getValor() {
+        return valor;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+
+    boolean temAutor() {
         return this.autor != null;
     }
 
-    public void aplicardDesconto(double porcentagem) {
-       if(porcentagem > 0.3) {
-           System.out.println("Desconto não pode ser maior que 30%");
-       } else {
-           this.valor -= this.valor * porcentagem;
-       }
+    void adicionaValor(double valor) {
+        this.setValor(valor);
+    }
+    double retornaValor() {
+        return this.getValor();
+    }
+    boolean aplicardDesconto(double porcentagem) {
+        if (porcentagem > 0.3) {
+            return false;
+        }
+        this.setValor(this.getValor() - this.getValor() * porcentagem);
+        return true;
     }
 }
