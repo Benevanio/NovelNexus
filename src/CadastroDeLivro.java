@@ -14,7 +14,7 @@ public class CadastroDeLivro {
         autor.cpf = "123.456.789-10";
         livro.autor = autor;
         livro.temAutor();
-        livro.aplicardDesconto(0.1);
+        livro.aplicardDesconto(0.2);
         livro.mostrarDetalhes();
 
         Livro Manga = new Livro();
@@ -23,8 +23,7 @@ public class CadastroDeLivro {
         Manga.isbn = "978-85-66250-46-6";
         Manga.categoria = "Aventura";
         Manga.editora = "Panini";
-        Manga.valor = 23.90;
-    
+        Manga.valor = 23.90;    
         Autor autor2 = new Autor();
         autor2.nome = "Yūto Tsukuda";
         autor2.email = "YuTsu@gmail.com";

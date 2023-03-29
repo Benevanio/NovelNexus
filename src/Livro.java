@@ -14,6 +14,7 @@ public class Livro {
         System.out.println("ISBN: " + isbn);
         System.out.println("Categoria: " + categoria);
         System.out.println("Editora: " + editora);
+        System.out.println("------");
         if (this.temAutor()) {
             autor.mostrarDetalhes();
         }
