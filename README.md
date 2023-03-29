@@ -22,7 +22,11 @@ Realização de pedidos para a tua sede.
 
 ## Referência
 
- - [JAVA](https://docs.oracle.com/en/java/)
+- [JBC](https://editorajbc.com.br/)
+
+- [Panini](https://panini.com.br/)
+
+- [JAVA](https://docs.oracle.com/en/java/)
  
 
 
