@@ -13,6 +13,7 @@ public class CadastroDeLivro {
         autor.email = "YuuKa@gmail.com";
         autor.cpf = "123.456.789-10";
         livro.autor = autor;
+        livro.temAutor();
         livro.aplicardDesconto(0.1);
         livro.mostrarDetalhes();
 
@@ -28,6 +29,7 @@ public class CadastroDeLivro {
         autor2.email = "YuTsu@gmail.com";
         autor2.cpf = "123.456.789-10";
         Manga.autor = autor2;
+        Manga.temAutor();
         Manga.aplicardDesconto(0.1);
         Manga.mostrarDetalhes();
 
