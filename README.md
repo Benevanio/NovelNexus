@@ -4,10 +4,7 @@
  
  # NovelNexus
  
- <img src="https://user-images.githubusercontent.com/78994881/228570711-3cfc0855-f4e6-47c3-80f4-1bab3ea6393e.gif" width="150px"> 
  
- 
-<h1 > N$N </h1>
 
 </div>
 
