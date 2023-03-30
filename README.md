@@ -52,6 +52,10 @@ Realização de pedidos para a tua sede.
 
 # Obrigado por ter visitado este repositorio
 
+<div align="center">
+
 https://user-images.githubusercontent.com/78994881/228617128-b107b232-ae5b-45e5-9784-ea7b5c656794.mp4
 
+
+</div>
 
