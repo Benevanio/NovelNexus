@@ -77,7 +77,8 @@ public class Livro {
     }
 
     boolean aplicardDesconto(double porcentagem) {
-        if (porcentagem > 0.3) {
+        if (porcentagem > 0.3) {            
+            System.out.println("Desconto não pode ser maior que 30%");
             return false;
         }
         this.setValor(this.getValor() - this.getValor() * porcentagem);
@@ -90,5 +91,5 @@ public class Livro {
 
     public Livro() {
     }
-
+   
 }
