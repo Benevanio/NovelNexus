@@ -87,6 +87,7 @@ public class Livro {
 
     public Livro(Autor autor) {
         this.autor = autor;
+        this.isbn = "000-00-00000-00-0";
     }
 
     public Livro() {
