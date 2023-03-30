@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-import produtos.Autor;
+import autor.Autor;
 import produtos.Livro;
 
 public class RegraDeDesconto {
@@ -25,7 +25,7 @@ public class RegraDeDesconto {
         System.out.println("Digite o valor do desconto: ");
 
         double desconto = valorDesconto.nextDouble();
-        livro.aplicardDesconto(desconto);
+        livro.aplicaDescontoDe(desconto);
         livro.mostrarDetalhes();
         valorDesconto.close();
 

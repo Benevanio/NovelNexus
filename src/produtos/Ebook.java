@@ -1,20 +1,13 @@
 package produtos;
+
+import autor.Autor;
+
 public class Ebook extends Livro {
     
 	private String waterMark;
 	
 	public Ebook(Autor autor) {
 		super(autor);
-	}
-	
-	
-	public boolean aplicaDescontoDe(double porcentagem) {
-		if (porcentagem > 0.15) {
-			return false;
-		}
-		double desconto = getValor() * porcentagem;
-		setValor(getValor() - desconto);
-		return true;
 	}
 	
 	public void setWaterMark(String waterMark) {

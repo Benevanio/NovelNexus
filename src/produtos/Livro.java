@@ -1,5 +1,8 @@
 
 package produtos;
+
+import autor.Autor;
+
 public class Livro {
     private String nome;
 	private String descricao;
@@ -69,9 +72,31 @@ public class Livro {
 	public void setAutor(Autor autor) {
 		this.autor = autor;
 	}
-
-    public void aplicardDesconto(double desconto) {
+//se for ebook 15% se for livro fisico 30% 
+    public boolean aplicaDescontoDe(double porcentagem) {
+       
+        if (porcentagem > 0.15) {
+            System.out.println("Desconto maior que 15%");
+            return false;
+        }
+        
+        if (porcentagem > 0.3) {
+            System.out.println("Desconto maior que 30%");
+            return false;
+        }
+        this.valor -= this.valor * porcentagem;
+        return true;
     }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (!(obj instanceof Livro)) return false;
+        Livro outro = (Livro) obj;
+        return this.isbn.equals(outro.isbn);
+    }
+
+    
+   
 	
    
 }
