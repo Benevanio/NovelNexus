@@ -9,7 +9,7 @@ public class RegraDeDesconto {
         autor.setCpf("123.456.789-10");
 
         Livro livro = new Livro(autor);
-        livro.setImpresso(true);
+        livro.setImpresso(false);
 
         livro.setNome("No game No life");
         livro.setDescricao(

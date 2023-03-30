@@ -82,11 +82,10 @@ public class Livro {
         if (porcentagem > 0.3) {            
             System.out.println("Desconto não pode ser maior que 30%");
             return false;
-        } else if (!this.impresso && porcentagem > 0.15) {
-            System.out.println("Desconto não pode ser maior que 15% para livros digitais");
-            return false;
-        } else {
-            this.valor -= this.valor * porcentagem;
+        }else {
+            double desconto = getValor() * porcentagem;
+            setValor(getValor() - desconto);
+            System.out.println("Valor do livro com desconto: " + getValor());
             return true;
         }
     }
