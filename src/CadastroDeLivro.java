@@ -23,9 +23,9 @@ public class CadastroDeLivro {
         Manga.setEditora("Panini");
         Manga.setValor(23.90);    
         Autor autor2 = new Autor();
-        autor2.nome = "Yūto Tsukuda";
-        autor2.email = "YuTsu@gmail.com";
-        autor2.cpf = "123.456.789-10";
+        autor2.setNome("Yūto Tsukuda");
+        autor2.setEmail("YuTsu@gmail.com");
+        autor2.setCpf("123.456.789-10");
         Manga.autor = autor2;
         Manga.temAutor();
         Manga.mostrarDetalhes();

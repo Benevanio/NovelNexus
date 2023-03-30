@@ -3,7 +3,7 @@ public class RegraDeDesconto {
     public static void main(String[] args) {
         Livro livro = new Livro();
         livro.setNome("No game No life");
-        livro.setDescricao("Um livro sobre um jogo");
+        livro.setDescricao("Shokugeki no Soma conta a história de um garoto chamado Sōma Yukihira, cujo sonho é se tornar um chef em tempo integral no restaurante de seu pai e superar suas habilidades culinárias.");
         livro.setIsbn("978-85-66250-46-6");
         livro.setCategoria("Aventura");
         livro.setEditora("JBC");
