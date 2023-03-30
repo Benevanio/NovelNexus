@@ -5,6 +5,7 @@ public class Livro {
     private String categoria;
     private String editora;
     private double valor;
+    private boolean impresso;
     Autor autor;
    
 
@@ -76,21 +77,31 @@ public class Livro {
         return this.autor != null;
     }
 
+
     boolean aplicardDesconto(double porcentagem) {
         if (porcentagem > 0.3) {            
             System.out.println("Desconto não pode ser maior que 30%");
             return false;
+        } else if (!this.impresso && porcentagem > 0.15) {
+            System.out.println("Desconto não pode ser maior que 15% para livros digitais");
+            return false;
+        } else {
+            this.valor -= this.valor * porcentagem;
+            return true;
         }
-        this.setValor(this.getValor() - this.getValor() * porcentagem);
-        return true;
     }
 
     public Livro(Autor autor) {
         this.autor = autor;
         this.isbn = "000-00-00000-00-0";
+        this.impresso = true;
     }
 
-    public Livro() {
+    public void setImpresso(boolean impresso) {
+        this.impresso = impresso;
+        System.out.println("O livro é impresso? " + this.impresso);
     }
+
+    
    
 }
