@@ -1,26 +1,67 @@
 public class Livro {
-    String nome;
-    String descricao;
-    String isbn;
-    String categoria;
-    String editora;
+    private String nome;
+    private String descricao;
+    private String isbn;
+    private String categoria;
+    private String editora;
     private double valor;
     Autor autor;
+    public String setDescricao;
 
     void mostrarDetalhes() {
         System.out.println("\nMostrando os detalhes do livro");
         System.out.println("Nome: " + nome);
-        System.out.println("Descrição: " + descricao);
+        System.out.println("Descrição: " + getDescricao());
         System.out.println("Valor: " + getValor());
-        System.out.println("ISBN: " + isbn);
-        System.out.println("Categoria: " + categoria);
-        System.out.println("Editora: " + editora);
+        System.out.println("ISBN: " + getIsbn());
+        System.out.println("Categoria: " + getCategoria());
+        System.out.println("Editora: " + getEditora());
         System.out.println("------");
         if (this.temAutor()) {
             autor.mostrarDetalhes();
         }
         System.out.println("----------");
 
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public String getEditora() {
+        return editora;
+    }
+
+    public void setEditora(String editora) {
+        this.editora = editora;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public double getValor() {
@@ -35,12 +76,6 @@ public class Livro {
         return this.autor != null;
     }
 
-    void adicionaValor(double valor) {
-        this.setValor(valor);
-    }
-    double retornaValor() {
-        return this.getValor();
-    }
     boolean aplicardDesconto(double porcentagem) {
         if (porcentagem > 0.3) {
             return false;
