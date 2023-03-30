@@ -9,7 +9,7 @@ public class Livro {
     Autor autor;
    
 
-    void mostrarDetalhes() {
+   protected void mostrarDetalhes() {
         System.out.println("\nMostrando os detalhes do livro");
         System.out.println("Nome: " + nome);
         System.out.println("Descrição: " + descricao);
@@ -77,30 +77,37 @@ public class Livro {
         return this.autor != null;
     }
 
+   //se for ebook, desconto ate 15% se for impresso, desconto ate 30%
 
-    boolean aplicardDesconto(double porcentagem) {
-        if (porcentagem > 0.3) {            
-            System.out.println("Desconto não pode ser maior que 30%");
-            return false;
-        }else {
-            double desconto = getValor() * porcentagem;
-            setValor(getValor() - desconto);
-            System.out.println("Valor do livro com desconto: " + getValor());
-            return true;
+    public void aplicardDesconto(double porcentagem) {
+        //ebook
+        if (this.impresso == false) {
+            if (porcentagem > 15) {
+                System.out.println("Desconto invalido para ebook");
+            } else {
+                this.valor -= this.valor * porcentagem / 100;
+                System.out.println("Valor do ebook com desconto: " + this.valor);
+            }
+        } else {
+            if (porcentagem > 30) {
+                System.out.println("Desconto invalido para livro impresso");
+            } else {
+                this.valor -= this.valor * porcentagem / 100;
+                System.out.println("Valor do livro com desconto: " + this.valor);
+            }
         }
     }
+
 
     public Livro(Autor autor) {
         this.autor = autor;
         this.isbn = "000-00-00000-00-0";
-        this.impresso = true;
     }
 
     public void setImpresso(boolean impresso) {
         this.impresso = impresso;
         System.out.println("O livro é impresso? " + this.impresso);
     }
-
     
    
 }

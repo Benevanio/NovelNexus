@@ -18,7 +18,6 @@ public class RegraDeDesconto {
         livro.setCategoria("Aventura");
         livro.setEditora("JBC");
         livro.setValor(59.90);
-
         Scanner valorDesconto = new Scanner(System.in);
         System.out.println("Digite o valor do desconto: ");
 
