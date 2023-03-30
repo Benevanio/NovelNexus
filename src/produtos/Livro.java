@@ -72,20 +72,19 @@ public class Livro {
 	public void setAutor(Autor autor) {
 		this.autor = autor;
 	}
-
+//se for ebook 15% se for livro fisico 30% 
     public boolean aplicaDescontoDe(double porcentagem) {
-       
-        if (porcentagem > 0.15) {
-            System.out.println("Desconto maior que 15%");
-            return false;
-        }
-        
-        if (porcentagem > 0.3) {
-            System.out.println("Desconto maior que 30%");
-            return false;
-        }
+    //ebook
+    if(this.valor > 15) {
         this.valor -= this.valor * porcentagem;
         return true;
+    }
+    //livro fisico
+    if(this.valor > 30) {
+        this.valor -= this.valor * porcentagem;
+        return true;
+    }
+    return false;
     }
     
     @Override
