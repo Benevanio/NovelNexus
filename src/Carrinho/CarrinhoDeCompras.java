@@ -1,4 +1,4 @@
-import produtos.Ebook;
+package Carrinho;
 import produtos.Livro;
 
 public class CarrinhoDeCompras {
@@ -6,12 +6,13 @@ public class CarrinhoDeCompras {
 
     public void adiciona(Livro livro) {
         System.out.println("Adicionando: " + livro);
-        livro.aplicaDescontoDe(0.3);
+        livro.aplicaDescontoDe(0.16);
         total += livro.getValor();
     }
 
     public double getTotal() {
         return total;
     }
+    
 
 }

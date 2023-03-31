@@ -7,8 +7,9 @@ public class LivroFisico extends Livro {
         super(autor);
     }
 
-    public double getTaxaImpressao() {
-        return this.getValor() * 0.05;
+    public double getTaxaImpressao(double d) {
+        System.out.println("Taxa de impressão: " + d);
+        return this.getValor() * 0.5;
     }
     
 }

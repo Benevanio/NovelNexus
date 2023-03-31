@@ -1,6 +1,8 @@
+package Admdashboard;
 import autor.Autor;
 import produtos.Ebook;
 import produtos.Livro;
+import produtos.LivroFisico;
 
 public class CadastroDeLivro {
     public static void main(String[] args) {
@@ -11,7 +13,7 @@ public class CadastroDeLivro {
         autor2.setCpf("123.456.789-10");
         autor2.mostrarDetalhes();
 
-        Livro Manga = new Livro(autor2);
+        Livro Manga = new Ebook(autor2);
         Manga.setNome("Shoukegeki no soma");
         Manga.setDescricao(
                 "Shokugeki no Soma conta a história de um garoto chamado Sōma Yukihira, cujo sonho é se tornar um chef em tempo integral no restaurante de seu pai e superar suas habilidades culinárias.");
@@ -25,7 +27,7 @@ public class CadastroDeLivro {
         autor3.setCpf("123.456.789-10");
         autor3.mostrarDetalhes();
 
-        Livro Anime = new Livro(autor3);
+        Livro Anime = new LivroFisico(autor3);
         Anime.setNome("No game No life");
         Anime.setDescricao(
                 "No game no life é uma série de light novels japonesa escrita por Yuu Kamiya e ilustrada por Mashiro Hiiragi. A série é publicada pela Media Factory desde 30 de janeiro de 2012, com 12 volumes compilados até o momento.");
@@ -40,9 +42,7 @@ public class CadastroDeLivro {
         autor4.setEmail("MakotoShink@gmail.com");
         autor4.setCpf("123.456.789-10");
         autor4.mostrarDetalhes();
-
         Ebook ebook = new Ebook(autor4);
-
         ebook.setNome("Notonoha no Niwa");
         ebook.setDescricao(
                 "Notonoha no Niwa é uma série de light novels japonesa escrita  Makoto Shinkai e ilustrado Midori Motobashi, conta a historia de um casal que se conhece em um jardim de flores.");

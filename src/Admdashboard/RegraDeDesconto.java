@@ -1,8 +1,10 @@
+package Admdashboard;
 import java.util.Scanner;
 
 import autor.Autor;
 import produtos.Ebook;
 import produtos.Livro;
+import produtos.LivroFisico;
 
 public class RegraDeDesconto {
     public static void main(String[] args) {
@@ -12,7 +14,7 @@ public class RegraDeDesconto {
         autor.setEmail("YuuKa@gmail.com");
         autor.setCpf("123.456.789-10");
 
-        Livro livro = new Livro(autor);
+        Livro livro = new Ebook(autor);
 
         livro.setNome("No game No life");
         livro.setDescricao(
@@ -46,6 +48,21 @@ public class RegraDeDesconto {
 
         ebook.setWaterMark("New Pop");
         ebook.mostrarDetalhes();
+
+        //livro fisico
+        Autor NogameActo = new Autor();
+        NogameActo.setNome("Yuu Kamiya");
+        NogameActo.setEmail("YUKA@gmail.com");
+        NogameActo.setCpf("123.456.789-10");
+        NogameActo.mostrarDetalhes();
+
+        LivroFisico livroFisico = new LivroFisico(NogameActo);
+        livroFisico.setNome("No game No life");
+        livroFisico.setDescricao("“No Game No Life” is a light novel series written and illustrated by Yū Kamiya. The series follows Sora and his younger stepsister Shiro, two hikikomori who make up the identity of Blank, an undefeated group of gamers. The light novel series has been adapted into a manga series, an anime television series, and a film. You can read the novel online at novelplanet.com.");
+        livroFisico.setIsbn("978-85-66250-46-6");
+        livroFisico.setValor(59.90);
+        livroFisico.getTaxaImpressao(0.4);
+        livroFisico.mostrarDetalhes();
 
     }
 }

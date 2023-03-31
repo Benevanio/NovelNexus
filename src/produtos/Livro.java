@@ -3,7 +3,7 @@ package produtos;
 
 import autor.Autor;
 
-public class Livro {
+public abstract class Livro {
 	private String nome;
 	private String descricao;
 	private double valor;
@@ -98,5 +98,7 @@ public class Livro {
 		Livro outro = (Livro) obj;
 		return this.isbn.equals(outro.isbn);
 	}
+
+	
 
 }
