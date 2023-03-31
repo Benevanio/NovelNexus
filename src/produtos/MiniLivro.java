@@ -1,6 +1,10 @@
 package produtos;
+
+import java.math.RoundingMode;
+
 import autor.Autor;
-public class MiniLivro  extends Livro{
+
+public class MiniLivro extends Livro {
 
     public MiniLivro(Autor autor) {
         super(autor);
@@ -8,14 +12,18 @@ public class MiniLivro  extends Livro{
 
     @Override
     public boolean aplicaDescontoDe(double porcentagem) {
-        
-        if(porcentagem > 0.4) {
+
+        if (porcentagem > 0.4) {
             return false;
         }
         double desconto = getValor() * porcentagem;
-        setValor(getValor() - desconto);
-        //controlar o numero de numeros depois da virgula
-        System.out.println("Valor do livro com desconto: " + getValor());
+    
+        desconto = new java.math.BigDecimal(desconto).setScale(2, RoundingMode.HALF_EVEN).doubleValue();
+       
+        setValor(new java.math.BigDecimal(getValor() - desconto).setScale(2, RoundingMode.HALF_EVEN).doubleValue());
+        System.out.println("Valor do desconto: " + desconto);
+        
+        System.out.println("Valor final do livro: " + getValor());
         
         return true;
     }

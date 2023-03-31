@@ -3,8 +3,6 @@ package Admdashboard;
 import autor.Autor;
 import produtos.Livro;
 import produtos.MiniLivro;
-
-
 public class RegraDeDesconto {
     public static void main(String[] args) {
         Autor autor = new Autor();
@@ -24,8 +22,7 @@ public class RegraDeDesconto {
             System.out.println("Desconto aplicado");
         } else {
             System.out.println("Desconto não pode ser maior que 30%");
-        }
-        
+        }        
 
     }
 }
