@@ -34,7 +34,7 @@ public class RegistroVendas {
         ebook.setIsbn("978-85-66250-46-6");
         ebook.setValor(26.00);
         ebook.setWaterMark("New Pop");
-        ebook.aplicaDescontoDe(0.2);
+        ebook.aplicaDescontoDe(0.1);
         ebook.mostrarDetalhes();
         //carrinho
         CarrinhoDeCompras carrinho = new CarrinhoDeCompras();

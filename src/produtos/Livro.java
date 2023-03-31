@@ -76,13 +76,14 @@ public abstract class Livro {
 			System.out.println("Aplicando desconto no Ebook com a taxa de impressão");
 			Ebook ebook = (Ebook) this;
 			ebook.setValor(ebook.getValor() - ebook.getValor() * porcentagem);
+			System.out.println("Valor do Ebook " + ebook.getValor());
 			return true;
-		}
-	
+		}	
 		else if (this instanceof LivroFisico) {
-			System.out.println("Aplicando desconto no com a taxa de impressão");
+			System.out.println("Aplicando desconto no livro com a taxa de impressão");
 			LivroFisico livroFisico = (LivroFisico) this;
 			livroFisico.getTaxaImpressao(livroFisico.getTaxaImpressao(porcentagem) - livroFisico.getTaxaImpressao(porcentagem) * porcentagem);
+			System.out.println("Valor do livro  " + livroFisico.getValor());
 			return true;
 		}
 
