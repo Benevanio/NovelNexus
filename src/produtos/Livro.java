@@ -4,25 +4,25 @@ package produtos;
 import autor.Autor;
 
 public class Livro {
-    private String nome;
+	private String nome;
 	private String descricao;
 	private double valor;
 	private String isbn;
 	private Autor autor;
 
 	public Livro(Autor autor) {
-        if (autor == null) {
-            throw new IllegalArgumentException("O autor do livro não pode ser nulo");
-        }
+		if (autor == null) {
+			throw new IllegalArgumentException("O autor do livro não pode ser nulo");
+		}
 	}
-	
+
 	public void mostrarDetalhes() {
 		System.out.println("Mostrando detalhes do livro ");
 		System.out.println("Nome: " + nome);
 		System.out.println("Descrição: " + descricao);
 		System.out.println("Valor: " + valor);
-		System.out.println("ISBN: " + isbn);	
-		
+		System.out.println("ISBN: " + isbn);
+
 		if (this.temAutor()) {
 			autor.mostrarDetalhes();
 		}
@@ -72,30 +72,31 @@ public class Livro {
 	public void setAutor(Autor autor) {
 		this.autor = autor;
 	}
-//se for ebook 15% se for livro fisico 30% 
-    public boolean aplicaDescontoDe(double porcentagem) {
-    //ebook
-    if(this.valor > 15) {
-        this.valor -= this.valor * porcentagem;
-        return true;
-    }
-    //livro fisico
-    if(this.valor > 30) {
-        this.valor -= this.valor * porcentagem;
-        return true;
-    }
-    return false;
-    }
-    
-    @Override
-    public boolean equals(Object obj) {
-        if (!(obj instanceof Livro)) return false;
-        Livro outro = (Livro) obj;
-        return this.isbn.equals(outro.isbn);
-    }
 
-    
-   
+	public boolean aplicaDescontoDe(double porcentagem) {
+
 	
-   
+		if (this instanceof Ebook) {
+			System.out.println("Aplicando desconto no Ebook");
+			this.setValor(this.getValor() - this.getValor() * porcentagem);
+			return true;
+		}
+	
+		else if (this instanceof LivroFisico) {
+			System.out.println("Aplicando desconto no Livro Fisico");
+			this.setValor(this.getValor() - this.getValor() * porcentagem);
+			return true;
+		}
+
+		return false;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (!(obj instanceof Livro))
+			return false;
+		Livro outro = (Livro) obj;
+		return this.isbn.equals(outro.isbn);
+	}
+
 }

@@ -17,8 +17,8 @@ public class Ebook extends Livro {
 		return waterMark;
 	}
 
-    //imporime o watermark
 
+	@Override
     public void mostrarDetalhes() {
         System.out.println("Mostrando detalhes do Ebook ");
         System.out.println("Nome: " + getNome());
