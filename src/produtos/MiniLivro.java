@@ -8,12 +8,15 @@ public class MiniLivro  extends Livro{
 
     @Override
     public boolean aplicaDescontoDe(double porcentagem) {
-        //mini livros desconto de 40%
+        
         if(porcentagem > 0.4) {
             return false;
         }
         double desconto = getValor() * porcentagem;
         setValor(getValor() - desconto);
+        //controlar o numero de numeros depois da virgula
+        System.out.println("Valor do livro com desconto: " + getValor());
+        
         return true;
     }
 }

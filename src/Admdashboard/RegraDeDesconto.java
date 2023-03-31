@@ -20,7 +20,7 @@ public class RegraDeDesconto {
         livro.setIsbn("978-85-66250-46-6");
         livro.mostrarDetalhes();
 
-        if (livro.aplicaDescontoDe(0.5)) {
+        if (livro.aplicaDescontoDe(0.2)) {
             System.out.println("Desconto aplicado");
         } else {
             System.out.println("Desconto não pode ser maior que 30%");
