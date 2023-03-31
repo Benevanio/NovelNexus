@@ -73,8 +73,9 @@ public abstract class Livro {
 
 	public boolean aplicaDescontoDe(double porcentagem) {
 		if (this instanceof Ebook) {
-			System.out.println("Aplicando desconto no Ebook");
-			this.setValor(this.getValor() - this.getValor() * porcentagem);
+			System.out.println("Aplicando desconto no Ebook com a taxa de impressão");
+			Ebook ebook = (Ebook) this;
+			ebook.setValor(ebook.getValor() - ebook.getValor() * porcentagem);
 			return true;
 		}
 	
