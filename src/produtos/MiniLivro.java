@@ -1,22 +1,19 @@
 package produtos;
 import autor.Autor;
-public class LivroFisico extends Livro {
-    public LivroFisico(Autor autor) {
+public class MiniLivro  extends Livro{
+
+    public MiniLivro(Autor autor) {
         super(autor);
     }
-    @Override 
+
+    @Override
     public boolean aplicaDescontoDe(double porcentagem) {
-        if(porcentagem > 0.3) {
+        //mini livros desconto de 40%
+        if(porcentagem > 0.4) {
             return false;
         }
         double desconto = getValor() * porcentagem;
         setValor(getValor() - desconto);
         return true;
     }
-    public double getTaxaImpressao(double d) {
-        
-        return this.getValor() * 0.5;
-    }
-
-    
 }

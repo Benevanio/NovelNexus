@@ -1,7 +1,6 @@
 package produtos;
 import autor.Autor;
 public abstract class Livro {
-
 	private String nome;
 	private String descricao;
 	private double valor;
@@ -38,11 +37,9 @@ public abstract class Livro {
 	public void setValor(double valor) {
 		this.valor = valor;
 	}
-
 	public String getNome() {
 		return nome;
 	}
-
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
@@ -50,15 +47,12 @@ public abstract class Livro {
 	public String getDescricao() {
 		return descricao;
 	}
-
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-
 	public String getIsbn() {
 		return isbn;
 	}
-
 	public void setIsbn(String isbn) {
 		this.isbn = isbn;
 	}
@@ -71,26 +65,7 @@ public abstract class Livro {
 		this.autor = autor;
 	}
 
-	public boolean aplicaDescontoDe(double porcentagem) {
-		if (this instanceof Ebook) {
-			System.out.println("Aplicando desconto no Ebook com a taxa de impressão");
-			Ebook ebook = (Ebook) this;
-			ebook.setValor(ebook.getValor() - ebook.getValor() * porcentagem);
-			System.out.println("Valor do Ebook " + ebook.getValor());
-			return true;
-		}	
-		else if (this instanceof LivroFisico) {
-			System.out.println("Aplicando desconto no livro com a taxa de impressão");
-			LivroFisico livroFisico = (LivroFisico) this;
-			livroFisico.getTaxaImpressao(livroFisico.getTaxaImpressao(porcentagem) - livroFisico.getTaxaImpressao(porcentagem) * porcentagem);
-			System.out.println("Valor do livro  " + livroFisico.getValor());
-			return true;
-		}
-
-		return false;
-	}
-
-	
+	public abstract boolean aplicaDescontoDe(double porcentagem);
 
 	@Override
 	public boolean equals(Object obj) {
@@ -99,7 +74,5 @@ public abstract class Livro {
 		Livro outro = (Livro) obj;
 		return this.isbn.equals(outro.isbn);
 	}
-
-	
 
 }
