@@ -3,10 +3,7 @@
 # Konichiwa, Bem-vindo ao repositorio da <img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="30px">
  
  # NovelNexus
- 
- 
 
-</div>
 
 <div align="center">
 
@@ -44,7 +41,7 @@ Realização de pedidos para a tua sede.
 ## Stack utilizada
 
 
-**Back-end:** ![JAVA](https://img.shields.io/badge/-Java-lightgrey)
+**Back-end:** <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> 
 
 
 # Obrigado por ter visitado este repositorio
