@@ -1,5 +1,4 @@
 package produtos;
-
 public class Revista implements Produto {
     private String nome;
     private String descricao;
@@ -40,5 +39,4 @@ public class Revista implements Produto {
         System.out.println("Valor final da revista: " + getValor());
         return true;
     }
-
 }

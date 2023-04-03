@@ -1,9 +1,11 @@
 package produtos;
 
 import java.math.RoundingMode;
+
+import Admdashboard.Promocional;
 import autor.Autor;
 
-public class MiniLivro extends Livro {
+public class MiniLivro extends Livro implements Promocional {
     public MiniLivro(Autor autor) {
         super(autor);
     }
