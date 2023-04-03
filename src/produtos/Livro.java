@@ -1,6 +1,8 @@
 package produtos;
+
 import autor.Autor;
-public abstract class Livro {
+
+public abstract class Livro  implements Produto {
 	private String nome;
 	private String descricao;
 	private double valor;
@@ -26,6 +28,8 @@ public abstract class Livro {
 		System.out.println("--");
 	}
 
+	public abstract boolean aplicaDescontoDe(double porcentagem);
+
 	boolean temAutor() {
 		return this.autor != null;
 	}
@@ -37,9 +41,11 @@ public abstract class Livro {
 	public void setValor(double valor) {
 		this.valor = valor;
 	}
+
 	public String getNome() {
 		return nome;
 	}
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
@@ -47,12 +53,15 @@ public abstract class Livro {
 	public String getDescricao() {
 		return descricao;
 	}
+
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
+
 	public String getIsbn() {
 		return isbn;
 	}
+
 	public void setIsbn(String isbn) {
 		this.isbn = isbn;
 	}
@@ -64,8 +73,6 @@ public abstract class Livro {
 	public void setAutor(Autor autor) {
 		this.autor = autor;
 	}
-
-	public abstract boolean aplicaDescontoDe(double porcentagem);
 
 	@Override
 	public boolean equals(Object obj) {

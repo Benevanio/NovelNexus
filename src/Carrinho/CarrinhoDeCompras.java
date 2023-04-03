@@ -1,5 +1,7 @@
 package Carrinho;
+
 import produtos.Livro;
+import produtos.Revista;
 
 public class CarrinhoDeCompras {
     private double total;
@@ -10,9 +12,14 @@ public class CarrinhoDeCompras {
         total += livro.getValor();
     }
 
+    public void adiciona(Revista revista) {
+        System.out.println("Adicionando: " + revista);
+        revista.aplicaDescontoDe(0.15);
+        total += revista.getValor();
+    }
+
     public double getTotal() {
         return total;
     }
-    
 
 }

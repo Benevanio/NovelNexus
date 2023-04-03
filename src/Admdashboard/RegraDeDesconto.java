@@ -3,6 +3,7 @@ package Admdashboard;
 import autor.Autor;
 import produtos.Livro;
 import produtos.MiniLivro;
+
 public class RegraDeDesconto {
     public static void main(String[] args) {
         Autor autor = new Autor();
@@ -18,11 +19,11 @@ public class RegraDeDesconto {
         livro.setIsbn("978-85-66250-46-6");
         livro.mostrarDetalhes();
 
-        if (livro.aplicaDescontoDe(0.2)) {
+        if (livro.aplicaDescontoDe(0.3)) {
             System.out.println("Desconto aplicado");
         } else {
             System.out.println("Desconto não pode ser maior que 30%");
-        }        
+        }
 
     }
 }
