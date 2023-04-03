@@ -44,5 +44,4 @@ public class Ebook extends Livro implements Promocional {
 		return "Eu sou um Ebook";
 	}
 
-
 }
