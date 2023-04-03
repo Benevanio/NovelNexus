@@ -2,7 +2,7 @@ package produtos;
 import admdashboard.Promocional;
 import autor.Autor;
 public class Ebook extends Livro implements Promocional {
-	private String waterMark;
+	private String waterMark;			
 	
 	public Ebook(Autor autor) {
 		super(autor);

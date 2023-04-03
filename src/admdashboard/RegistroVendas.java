@@ -19,7 +19,8 @@ public class RegistroVendas {
                 "Shokugeki no Soma conta a história de um garoto chamado Sōma Yukihira, cujo sonho é se tornar um chef em tempo integral no restaurante de seu pai e superar suas habilidades culinárias.");
         Manga.setIsbn("978-85-66250-46-6");
         Manga.setValor(23.90);
-        Manga.aplicaDescontoDe(0.2);
+        Manga.getTaxaImpressao(0.3);
+        Manga.aplicaDescontoDe(0.3);
         Manga.mostrarDetalhes();
         // ebook
         Autor autor4 = new Autor();

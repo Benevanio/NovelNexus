@@ -2,7 +2,7 @@ package produtos;
 
 import autor.Autor;
 
-public abstract class Livro  implements Produto {
+public abstract class Livro implements Produto {
 	private String nome;
 	private String descricao;
 	private double valor;
@@ -74,6 +74,10 @@ public abstract class Livro  implements Produto {
 		this.autor = autor;
 	}
 
+	public double getTaxaImpressao(double d) {
+		return this.getValor() * 0.5;
+	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (!(obj instanceof Livro))
@@ -81,8 +85,4 @@ public abstract class Livro  implements Produto {
 		Livro outro = (Livro) obj;
 		return this.isbn.equals(outro.isbn);
 	}
-
-	public double getTaxaImpressao(double d) {
-        return this.getValor() * 0.5;
-    }    
 }
