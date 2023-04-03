@@ -82,4 +82,7 @@ public abstract class Livro  implements Produto {
 		return this.isbn.equals(outro.isbn);
 	}
 
+	public double getTaxaImpressao(double d) {
+        return this.getValor() * 0.5;
+    }    
 }
