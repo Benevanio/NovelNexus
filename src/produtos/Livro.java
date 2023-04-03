@@ -11,7 +11,7 @@ public abstract class Livro implements Produto {
 
 	public Livro(Autor autor) {
 		if (autor == null) {
-			throw new IllegalArgumentException("O autor do livro não pode ser nulo");
+			throw new AutorNuloException("O livro deve ter um autor");
 		}
 	}
 

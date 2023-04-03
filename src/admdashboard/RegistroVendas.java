@@ -1,6 +1,6 @@
 package admdashboard;
-import Carrinho.CarrinhoDeCompras;
 import autor.Autor;
+import carrinho.CarrinhoDeCompras;
 import produtos.Ebook;
 import produtos.Livro;
 import produtos.LivroFisico;
@@ -34,8 +34,7 @@ public class RegistroVendas {
                 "Notonoha no Niwa é uma série de light novels japonesa escrita  Makoto Shinkai e ilustrado Midori Motobashi, conta a historia de um casal que se conhece em um jardim de flores.");
         ebook.setIsbn("978-85-66250-46-6");
         ebook.setValor(26.00);
-        ebook.setWaterMark(
-            "New Pop");
+        ebook.setWaterMark("New Pop");
         ebook.aplicaDescontoDe(0.12);
         ebook.mostrarDetalhes();
         //carrinho
