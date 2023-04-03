@@ -1,4 +1,4 @@
-package Admdashboard;
+package admdashboard;
 import autor.Autor;
 import produtos.Ebook;
 import produtos.Livro;

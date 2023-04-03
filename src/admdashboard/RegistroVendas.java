@@ -1,6 +1,6 @@
-package Admdashboard;
-import Carrinho.CarrinhoDeCompras;
+package admdashboard;
 import autor.Autor;
+import carrinho.CarrinhoDeCompras;
 import produtos.Ebook;
 import produtos.Livro;
 import produtos.LivroFisico;

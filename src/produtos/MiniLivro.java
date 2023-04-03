@@ -2,7 +2,7 @@ package produtos;
 
 import java.math.RoundingMode;
 
-import Admdashboard.Promocional;
+import admdashboard.Promocional;
 import autor.Autor;
 
 public class MiniLivro extends Livro implements Promocional {

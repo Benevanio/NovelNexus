@@ -1,5 +1,5 @@
 package produtos;
-import Admdashboard.Promocional;
+import admdashboard.Promocional;
 import autor.Autor;
 public class Ebook extends Livro implements Promocional {
 	private String waterMark;

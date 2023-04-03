@@ -1,5 +1,8 @@
 package produtos;
-public class Revista implements Produto {
+import admdashboard.Promocional;
+
+public class Revista implements Produto, Promocional {
+
     private String nome;
     private String descricao;
     private double valor;

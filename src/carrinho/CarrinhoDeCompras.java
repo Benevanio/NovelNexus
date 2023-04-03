@@ -1,4 +1,4 @@
-package Carrinho;
+package carrinho;
 
 import produtos.Livro;
 import produtos.Produto;

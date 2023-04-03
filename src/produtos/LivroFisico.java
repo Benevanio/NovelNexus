@@ -1,10 +1,13 @@
 package produtos;
-import Admdashboard.Promocional;
+import admdashboard.Promocional;
 import autor.Autor;
+
 public class LivroFisico extends Livro  implements Promocional{
+    
     public LivroFisico(Autor autor) {
         super(autor);
     }
+
     @Override 
     public boolean aplicaDescontoDe(double porcentagem) {
         if(porcentagem > 0.3) {
@@ -14,10 +17,8 @@ public class LivroFisico extends Livro  implements Promocional{
         setValor(getValor() - desconto);
         return true;
     }
-    public double getTaxaImpressao(double d) {
-        
-        return this.getValor() * 0.5;
-    }
 
-    
+    public double getTaxaImpressao(double d) {
+        return this.getValor() * 0.5;
+    }    
 }
