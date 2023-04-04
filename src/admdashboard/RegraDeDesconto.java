@@ -22,9 +22,7 @@ public class RegraDeDesconto {
         Manga.aplicaDescontoDe(0.3);
         Manga.setValor(Manga.getValor() + LivroFisico.getTaxaImpressao(8));
         Manga.mostrarDetalhes();
-
         // ebook
-        
         Autor autor4 = new Autor();
         autor4.setNome("Makoto Shinkai");
         autor4.setEmail("MakotoShink@gmail.com");
