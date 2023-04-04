@@ -6,7 +6,6 @@ import produtos.Ebook;
 import produtos.Livro;
 import produtos.LivroFisico;
 
-
 public class RegraDeDesconto {
     public static void main(String[] args) {
         Autor autor2 = new Autor();
@@ -23,7 +22,9 @@ public class RegraDeDesconto {
         Manga.aplicaDescontoDe(0.3);
         Manga.setValor(Manga.getValor() + LivroFisico.getTaxaImpressao(8));
         Manga.mostrarDetalhes();
+
         // ebook
+        
         Autor autor4 = new Autor();
         autor4.setNome("Makoto Shinkai");
         autor4.setEmail("MakotoShink@gmail.com");
@@ -38,13 +39,12 @@ public class RegraDeDesconto {
         ebook.setWaterMark("New Pop");
         ebook.aplicaDescontoDe(0.2);
         ebook.mostrarDetalhes();
-        //carrinho
+        // carrinho
         CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
         carrinho.adiciona(Manga);
         carrinho.adiciona(ebook);
-        //carrinho  valor total
+        // carrinho valor total
         System.out.println("Total, com descontos " + carrinho.getTotal());
-
 
     }
 }

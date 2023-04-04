@@ -74,7 +74,9 @@ public abstract class Livro implements Produto {
 		this.autor = autor;
 	}
 
-	
+	public void setWaterMark(String string) {
+	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (!(obj instanceof Livro))
@@ -83,6 +85,4 @@ public abstract class Livro implements Produto {
 		return this.isbn.equals(outro.isbn);
 	}
 
-    public void setWaterMark(String string) {
-    }
 }
