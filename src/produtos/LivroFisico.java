@@ -15,6 +15,7 @@ public class LivroFisico extends Livro implements Promocional {
     @Override
     public boolean aplicaDescontoDe(double porcentagem) {
         if (porcentagem > 0.3) {
+            System.out.println("Desconto não pode ser maior que 30%");
             return false;
         }
         double desconto = getValor() * porcentagem;
@@ -25,7 +26,7 @@ public class LivroFisico extends Livro implements Promocional {
     public static double getTaxaImpressao(double d) {
         d = new BigDecimal(d).setScale(2, RoundingMode.HALF_UP).doubleValue();
         System.out.println("valor da taxa: " + d);
-        return d;
+        return d ;
 
     }
 
@@ -47,4 +48,6 @@ public class LivroFisico extends Livro implements Promocional {
     public String toString() {
         return "Eu sou um Livro Fisico";
     }
+
+    
 }

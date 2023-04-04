@@ -43,4 +43,5 @@ public class Revista implements Produto, Promocional {
         System.out.println("Valor final da revista: " + getValor());
         return true;
     }
+   
 }

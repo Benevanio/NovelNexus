@@ -21,4 +21,5 @@ public class MiniLivro extends Livro implements Promocional {
         System.out.println("Valor final do livro: " + getValor());
         return true;
     }
+    
 }

@@ -8,6 +8,7 @@ import produtos.LivroFisico;
 
 public class RegistroVendas {
     public static void main(String[] args) {
+        // livro fisico
         CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
         Autor autor = new Autor();
         autor.setNome("Alan F. Kay");
@@ -19,13 +20,10 @@ public class RegistroVendas {
         livro.setValor(59.90);
         livro.setDescricao("Uma introdução a POO e Java");
         livro.setIsbn("978-85-66250-46-6");
-        livro.aplicaDescontoDe(0.2);
+        livro.aplicaDescontoDe(0.3);
         livro.mostrarDetalhes();
-        livro.setValor(livro.getValor() + LivroFisico.getTaxaImpressao(8));
-
-
-        //ebook
-
+        livro.setValor(livro.getValor() + LivroFisico.getTaxaImpressao(0.2));
+        // ebook
         Autor autor2 = new Autor();
         autor2.setNome("Yūto Tsukuda");
         autor2.setEmail("YUKA@gmail.com");
@@ -38,13 +36,12 @@ public class RegistroVendas {
         Manga.setIsbn("978-85-66250-46-6");
         Manga.setValor(23.90);
         Manga.setWaterMark("New Pop");
-        Manga.aplicaDescontoDe(0.3);
+        Manga.aplicaDescontoDe(0.5);
         Manga.mostrarDetalhes();
-        // ebook
-
-
+        // carrinho
         carrinho.adiciona(Manga);
         carrinho.adiciona(livro);
+        //carrinho.remove(Manga);
         System.out.println("Total: " + carrinho.getTotal());
     }
 }

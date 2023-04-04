@@ -10,6 +10,7 @@ public class Ebook extends Livro implements Promocional {
 	@Override
     public boolean aplicaDescontoDe(double porcentagem) {
 		if(porcentagem > 0.15) {
+			System.out.println("Desconto não pode ser maior que 15%");
 			return false;
 		}
 		double desconto = getValor() * porcentagem;
@@ -43,5 +44,6 @@ public class Ebook extends Livro implements Promocional {
 	public String toString() {
 		return "Eu sou um Ebook";
 	}
+	
 
 }
