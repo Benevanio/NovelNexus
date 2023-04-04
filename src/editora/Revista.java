@@ -1,5 +1,6 @@
-package produtos;
+package editora;
 import admdashboard.Promocional;
+import produtos.Produto;
 
 public class Revista implements Produto, Promocional {
 

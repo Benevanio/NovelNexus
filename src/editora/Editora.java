@@ -1,4 +1,4 @@
-package produtos;
+package editora;
 
 public class Editora {
     private String nomeFantasia;

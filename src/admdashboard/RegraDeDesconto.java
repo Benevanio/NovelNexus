@@ -1,10 +1,10 @@
 package admdashboard;
 
+import Livros.Livro;
+import Livros.LivroFisico;
 import autor.Autor;
 import carrinho.CarrinhoDeCompras;
-import produtos.Ebook;
-import produtos.Livro;
-import produtos.LivroFisico;
+import ebook.Ebook;
 
 public class RegraDeDesconto {
     public static void main(String[] args) {

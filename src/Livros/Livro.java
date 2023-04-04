@@ -1,6 +1,8 @@
-package produtos;
+package Livros;
 
 import autor.Autor;
+import autor.AutorNuloException;
+import produtos.Produto;
 
 public abstract class Livro implements Produto {
 	private String nome;
@@ -15,7 +17,7 @@ public abstract class Livro implements Produto {
 		}
 	}
 
-	boolean temAutor() {
+	protected boolean temAutor() {
 		return this.autor != null;
 	}
 

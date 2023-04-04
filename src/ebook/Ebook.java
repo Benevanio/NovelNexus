@@ -1,4 +1,5 @@
-package produtos;
+package ebook;
+import Livros.Livro;
 import admdashboard.Promocional;
 import autor.Autor;
 public class Ebook extends Livro implements Promocional {
