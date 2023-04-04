@@ -34,6 +34,7 @@ public class Revista implements Produto, Promocional {
     }
     public boolean aplicaDescontoDe(double porcentagem) {
         if (porcentagem > 0.1) {
+            System.out.println("Desconto não pode ser maior que 10%");
             return false;
         }
         double desconto = getValor() * porcentagem;

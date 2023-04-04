@@ -15,6 +15,10 @@ public abstract class Livro implements Produto {
 		}
 	}
 
+	boolean temAutor() {
+		return this.autor != null;
+	}
+
 	public void mostrarDetalhes() {
 		System.out.println("Mostrando detalhes do livro ");
 		System.out.println("Nome: " + nome);
@@ -29,10 +33,6 @@ public abstract class Livro implements Produto {
 	}
 
 	public abstract boolean aplicaDescontoDe(double porcentagem);
-
-	boolean temAutor() {
-		return this.autor != null;
-	}
 
 	public double getValor() {
 		return valor;
