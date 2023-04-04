@@ -1,5 +1,7 @@
 package carrinho;
 
+import java.math.BigDecimal;
+
 import produtos.Produto;
 
 public class CarrinhoDeCompras {
@@ -12,7 +14,7 @@ public class CarrinhoDeCompras {
         System.out.println("Adicionando: " + produto);
         this.produtos[contador] = produto;
         contador++;
-        total += produto.getValor();
+        total =new BigDecimal(total + produto.getValor()).setScale(2, BigDecimal.ROUND_HALF_UP).doubleValue();
     }
 
     public double getTotal() {
