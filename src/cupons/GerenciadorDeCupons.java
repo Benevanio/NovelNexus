@@ -1,19 +1,18 @@
 package cupons;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.HashMap;
+import java.util.Map;
 
 public class GerenciadorDeCupons {
-    private Set<String> cupons;
+    private Map<String, Double> cupons;
+
     public GerenciadorDeCupons() {
-        this.cupons = new HashSet<>();
-        this.cupons.add("CUPOM10");
-        this.cupons.add("CUPOM20");
-        this.cupons.add("CUPOM30");
-        this.cupons.add("CUPOM40");
-        this.cupons.add("CUPOM50");
+        this.cupons = new HashMap<>();
+        this.cupons.put("CUPOM10", 10.0);
+        this.cupons.put("CUPOM20", 20.0);
+        this.cupons.put("CUPOM30", 30.0);
     }
     public boolean ValidaCupom(String cupom) {
-        return this.cupons.contains(cupom);
+        return this.cupons.containsKey(cupom);
     }
 }
