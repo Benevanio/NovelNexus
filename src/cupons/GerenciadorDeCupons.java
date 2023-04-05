@@ -15,4 +15,10 @@ public class GerenciadorDeCupons {
     public boolean ValidaCupom(String cupom) {
         return this.cupons.containsKey(cupom);
     }
+    public Double getDesconto(String cupom) {
+        if(this.ValidaCupom(cupom)) {
+            return this.cupons.get(cupom);
+        }
+        return null;
+    }
 }
