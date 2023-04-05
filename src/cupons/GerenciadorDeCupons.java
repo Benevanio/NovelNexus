@@ -3,7 +3,7 @@ package cupons;
 import java.util.HashMap;
 import java.util.Map;
 
-public class GerenciadorDeCupons {
+public   class GerenciadorDeCupons {
     private Map<String, Double> cupons;
 
     public GerenciadorDeCupons() {
